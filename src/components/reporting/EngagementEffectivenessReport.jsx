@@ -46,29 +46,38 @@ const companyEffectivenessData = {
     { method: 'Email', successRate: 20 },
     { method: 'Phone Call', successRate: 30 },
     { method: 'LinkedIn Message', successRate: 10 },
+    { method: 'Naukri',successRate:15},
    
   ],
   GOOGLE: [
     { method: 'Email', successRate: 16 },
     { method: 'Phone Call', successRate: 10 },
     { method: 'LinkedIn Message', successRate: 30 },
+    { method: 'Naukri',successRate:25},
     
   ],
   MICROSOFT: [
     { method: 'Email', successRate: 10 },
     { method: 'Phone Call', successRate: 16 },
     { method: 'LinkedIn Message', successRate: 20 },
+    { method: 'Naukri',successRate:25},
     
   ],
+  APPLE:[
+    { method:'Email',successRate:12 },
+    { method:'Phone Call',seccessRate:16},
+    { method:'LinkedIn Message',successRate:8},
+    { method:'Naukri',successRate:20},
+  ]
 };
 
 // Colors for pie chart - why not rainbow?
-const COLORS = ['#c634bb', '#34a9c6', '#34c665', '#FF8042', 'c65734', '#3342022'];
+const COLORS = ['#FF0000', '#1976D2', '#FFC0CB', '#FFFF00', 'c65734', '#3342022'];
 
 const EngagementEffectivenessReport = () => {
   const [company, setCompany] = useState(''); // State for selected company
   const [filteredData, setFilteredData] = useState([]); // Filtered data state
-  const companies = ['ENTNT', 'GOOGLE', 'MICROSOFT']; // List of companies
+  const companies = ['ENTNT', 'GOOGLE', 'MICROSOFT','APPLE]; // List of companies
 
   // Effect to handle filtering
   React.useEffect(() => {
