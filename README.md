@@ -144,7 +144,7 @@ open the folder in VS code
 
 open new terminal enter the command 
 ### Follow below steps
-### npm instal
+### npm install
 ### npm start 
 
 now the web page opens in your browser
