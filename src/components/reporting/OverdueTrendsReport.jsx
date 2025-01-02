@@ -7,15 +7,15 @@ import { Box, FormControl, InputLabel, Select, MenuItem, TextField, Grid, Typogr
 
 // Mock data that never gets old
 const MOCK_DATA = [
-  { date: '2024-01-01', ENTNT: 5,  MICROSOFT: 7 },
-  { date: '2024-01-02', ENTNT: 2,  MICROSOFT: 6 },
-  { date: '2024-01-03', ENTNT: 3,  MICROSOFT: 5 },
-  { date: '2024-01-04', ENTNT: 4,  MICROSOFT: 3 },
-  { date: '2024-01-05', ENTNT: 1,  MICROSOFT: 4 },
+  { date: '2024-01-01', ENTNT: 5,  MICROSOFT: 7 ,APPLE:9 },
+  { date: '2024-01-02', ENTNT: 2,  MICROSOFT: 6 ,APPLE:7},
+  { date: '2024-01-03', ENTNT: 3,  MICROSOFT: 5 ,APPLE:5},
+  { date: '2024-01-04', ENTNT: 4,  MICROSOFT: 3 ,APPLE:4},
+  { date: '2024-01-05', ENTNT: 1,  MICROSOFT: 4 ,APPLE:3},
 ];
 
 // Random colors for our lines
-const COLORS = ['#9e695e', '#c634bb'];
+const COLORS = ['#FF0000','#1976D2','#000000'];
 
 const OverdueTrendsReport = () => {
   const availableCompanies = MOCK_DATA.length > 0 ? Object.keys(MOCK_DATA[0]).filter((key) => key !== 'date') : []; // Companies in the data
